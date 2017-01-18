@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [ ! $1 ]; then
-    echo "Please enter a 16 character seed: "
-        read -e -i "$SEED" -p "16 character seed: " SEED_INPUT
+    echo "Please enter a 16-character two-step authorization key: "
+        read -e -i "$SEED" -p "MFA auth key: " SEED_INPUT
     SEED="${SEED_INPUT:-$SEED}"
 else
     set -- "$1" "$SEED"
